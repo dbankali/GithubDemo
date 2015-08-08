@@ -1,0 +1,13 @@
+<apex:component controller="copado.creditsCompController" id="creditsComponent" >
+	
+    <apex:pageMessage id="theMessage" strength="3" severity="ERROR" title="{!$Label.site.error2}" summary="{!errorMessage}" rendered="{!showError}" />
+    <apex:pageBlock id="pbCredits" title="{!$Label.CREDIT_BALANCE}: {!creditBalance}" rendered="{!isValid}" helpUrl="http://www.copa.do/cms/documentation" helpTitle="{!$Label.HELP_FOR_THIS_PAGE}">
+        <apex:commandButton rendered="true" id="btn_refreshBalance" value="{!$Label.REFRESH_BALANCE}" action="{!getCredits}" immediate="true" status="loadingStatus" rerender="pbCredits" />
+        <apex:actionStatus id="loadingStatus">
+            <apex:facet name="start">
+                <apex:image url="/img/loading.gif"/>
+            </apex:facet>
+        </apex:actionStatus>&nbsp;
+        <apex:outputLink value="{!manageSubscriptionUrl}" target="_blank" >{!$Label.MANAGE_SUBSCRIPTION}</apex:outputLink>
+    </apex:pageBlock>   
+</apex:component>
