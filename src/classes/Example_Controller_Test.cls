@@ -1,5 +1,6 @@
 @isTest
 //adding comment 1
+// Adding new comment
 private class Example_Controller_Test {
 
 	private static testMethod void test() {
