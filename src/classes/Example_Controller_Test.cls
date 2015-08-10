@@ -1,5 +1,6 @@
 @isTest
 //adding comment 1
+//Adding from new branch
 private class Example_Controller_Test {
 
 	private static testMethod void test() {
