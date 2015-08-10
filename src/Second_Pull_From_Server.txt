@@ -2,4 +2,4 @@ Hello Second Pull from Server
 
 Modified this Code and checking it into Server from Branch Commit
 
-Conflict scenario tests from local
+Edited this file to reproduce "Conflict" scenarios
