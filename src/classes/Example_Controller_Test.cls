@@ -2,7 +2,7 @@
 //adding comment 1
 // Adding new comment
 private class Example_Controller_Test {
-
+	String strTestGit;
 	private static testMethod void test() {
     
     Example_Controller controller = new Example_Controller();
