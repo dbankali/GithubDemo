@@ -6,6 +6,7 @@ global with sharing class Example_Controller {
     public static String jsonAccount3{get;set;}
     public static String jsonAccount4{get;set;}
     public static String jsonAnushka1{get;set;}
+    public static String Branch_Anushka_Change{get;set;}
     global Example_Controller(){
         jsonAccount = JSON.serialize(new Account());
         
